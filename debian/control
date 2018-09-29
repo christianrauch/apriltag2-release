@@ -1,0 +1,12 @@
+Source: ros-bouncy-apriltag
+Section: misc
+Priority: extra
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Build-Depends: debhelper (>= 9.0.0), cmake, ros-bouncy-ros-workspace
+Homepage: https://april.eecs.umich.edu/software/apriltag.html
+Standards-Version: 3.9.2
+
+Package: ros-bouncy-apriltag
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-bouncy-ros-workspace
+Description: AprilTag detector library
