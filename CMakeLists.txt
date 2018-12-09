@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 project(apriltag)
 
 find_package(Threads REQUIRED)
-find_package(OpenCV)
+find_package(OpenCV QUIET)
 
 include_directories(.)
 aux_source_directory(common COMMON_SRC)
@@ -21,17 +21,18 @@ target_link_libraries(apriltag_demo apriltag)
 if(OpenCV_FOUND)
     add_executable(opencv_demo example/opencv_demo.cc)
     target_link_libraries(opencv_demo apriltag ${OpenCV_LIBRARIES})
+    install(TARGETS opencv_demo RUNTIME DESTINATION bin)
 endif(OpenCV_FOUND)
 
 # install library and headers
-install(TARGETS apriltag
+install(TARGETS apriltag apriltag_demo
     ARCHIVE DESTINATION lib
     LIBRARY DESTINATION lib
     RUNTIME DESTINATION bin
 )
 
 install(DIRECTORY .
-        DESTINATION ${CMAKE_INSTALL_PREFIX}/include/${PROJECT_NAME}/
+        DESTINATION include/${PROJECT_NAME}/
         FILES_MATCHING PATTERN "*.h"
         PATTERN ".git" EXCLUDE
         PATTERN "example" EXCLUDE)
