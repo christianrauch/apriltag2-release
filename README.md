@@ -1,3 +1,26 @@
+## apriltag2 (crystal) - 0.9.8-1
+
+The packages in the `apriltag2` repository were released into the `crystal` distro by running `/usr/bin/bloom-release --rosdistro crystal --track crystal apriltag2` on `Tue, 11 Dec 2018 01:48:22 -0000`
+
+The `apriltag` package was released.
+
+Version of package(s) in repository `apriltag2`:
+
+- upstream repository: https://github.com/christianrauch/apriltag2.git
+- release repository: https://github.com/christianrauch/apriltag2-release.git
+- rosdistro version: `0.9.8-0`
+- old version: `0.9.8-0`
+- new version: `0.9.8-1`
+
+Versions of tools used:
+
+- bloom version: `0.6.9`
+- catkin_pkg version: `0.4.9`
+- rosdep version: `0.13.0`
+- rosdistro version: `0.7.0`
+- vcstools version: `0.1.40`
+
+
 ## apriltag2 (crystal) - 0.9.8-0
 
 The packages in the `apriltag2` repository were released into the `crystal` distro by running `/usr/bin/bloom-release --rosdistro crystal --track crystal apriltag2` on `Sun, 09 Dec 2018 13:51:57 -0000`
