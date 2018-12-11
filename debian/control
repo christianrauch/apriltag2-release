@@ -1,0 +1,12 @@
+Source: ros-crystal-apriltag
+Section: misc
+Priority: extra
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Build-Depends: debhelper (>= 9.0.0), cmake, ros-crystal-ros-workspace
+Homepage: https://april.eecs.umich.edu/software/apriltag.html
+Standards-Version: 3.9.2
+
+Package: ros-crystal-apriltag
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-crystal-ros-workspace
+Description: AprilTag detector library
